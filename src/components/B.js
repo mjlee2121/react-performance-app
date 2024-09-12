@@ -15,6 +15,7 @@ const ListItem = React.memo(({post}) =>{
 
 const List = React.memo(({posts, testFunction}) => {
     console.log('List component is rendering')
+    
     return (
         <ul>
             {posts.map(post =>(
@@ -27,8 +28,7 @@ const List = React.memo(({posts, testFunction}) => {
 const B = ({message, posts}) => {
 
     console.log('B component is rendering')
-
-   
+    
     const testFunction = useCallback(() => {
 
     });
